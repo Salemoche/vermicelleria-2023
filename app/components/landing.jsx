@@ -8,18 +8,18 @@ const LandingComponent = () => {
                 </div>
                 <div className="base-1/2 landscape:base-1/3 text-right">immer 14:00–22:00</div>
             </div>
-            <div className="w-full md:flex relative flex flex-col justify-between flex-1">
+            <div className="w-full md:flex relative flex flex-col justify-between items-center flex-1">
                 <img className="w-full absolute -z-10 max-h-[80%] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 landscape:hidden" src="./images/graphics/landingpage-1080x1920-02.svg" />
                 <img className="w-full absolute -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 portrait:hidden" src="./images/graphics/landingpage-1920x1080-01.svg" />
-                <div className="w-full flex justify-center landscape:hidden ">
-                    <img className="max-w-[60%] mt-[5%] xs:max-w-[68%] xs:mt-[12%]" src="./images/graphics/logo-vermicelleria-schwarz.svg" />
+                <div className="w-full h-[16%] mt-6 flex justify-center landscape:hidden ">
+                    <img className="" src="./images/graphics/logo-vermicelleria-schwarz.svg" />
                 </div>
-                <div className="flex justify-between content-center landscape:hidden">
-                    <div className="basis-1/2 flex content-center">
-                        <img className="" src="./images/graphics/jubilaeums-banner.svg" />
+                <div className="h-[20%] max-w-[40vh] w-full mb-4 flex justify-around content-center landscape:hidden">
+                    <div className="flex items-center">
+                        <img className="h-[50%]" src="./images/graphics/jubilaeums-banner.svg" />
                     </div>
-                    <div className="basis-1/2 flex content-center justify-end">
-                        <img className="w-[80%]" src="./images/graphics/fuenf-jahres-stern.svg" />
+                    <div className="flex items-center justify-end">
+                        <img className="h-full" src="./images/graphics/fuenf-jahres-stern.svg" />
                     </div>
                 </div>
             </div>
