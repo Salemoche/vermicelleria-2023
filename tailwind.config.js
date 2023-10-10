@@ -7,12 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+        fontSize: {
+            'sm': '1rem',
+            'lg': '1.5rem',
+            'xl': '1.875rem',
+        },
+        fontFamily: {
+            special: ['var(--font-special)', 'sans-serif'],
+            regular: ['var(--font-regular)', 'sans-serif']
+        },
+        screens: {
+            'xs': '414px',
+        },
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    // ...
+  ],
 }

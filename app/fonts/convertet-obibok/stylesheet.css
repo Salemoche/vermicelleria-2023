@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Obibok Inversed';
+    src: url('Obibok-Inversed.woff2') format('woff2'),
+        url('Obibok-Inversed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
