@@ -1,6 +1,6 @@
 const LandingComponent = () => {
     return (
-        <section className="h-screen py-2 justify-between flex flex-col lg:text-lg">
+        <section className="h-[100svh] py-2 justify-between flex flex-col lg:text-lg">
             <div className="w-full flex justify-between">
                 <div className="base-1/2 landscape:base-1/3">02.—26. November</div>
                 <div className="portrait:hidden base-1/3">
@@ -27,7 +27,7 @@ const LandingComponent = () => {
                 <div className="landscape:hidden">
                     <a href="https://maps.app.goo.gl/Q6GzC2B9nPQXNVfw6" target="_blank">Bäckerstrasse 26, 8004 Zürich</a>
                 </div>
-                <div className="portrait:hidden basis-[20%] flex items-center justify-center">
+                <div className="portrait:hidden basis-[20%] flex items-center justify-center landscape:justify-start">
                     <a href="https://www.instagram.com/vermicelleria/">Instagram</a>
                 </div>
                 <div className="portrait:hidden basis-[20%] flex items-center justify-center">
@@ -39,7 +39,7 @@ const LandingComponent = () => {
                 <div className="portrait:hidden basis-[20%] flex items-center justify-center">
                     <img className="w-[50%]" src="./images/graphics/fuenf-jahres-stern.svg" />
                 </div>
-                <div className="text-right landscape:basis-[20%] flex items-center justify-center">
+                <div className="text-right landscape:basis-[20%] flex items-center justify-center landscape:justify-end">
                     <a href="mailto:mhmm@vermicelleria.ch">Mail</a>
                 </div>
             </div>
