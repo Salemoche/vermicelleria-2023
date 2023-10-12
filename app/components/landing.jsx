@@ -1,6 +1,6 @@
 const LandingComponent = () => {
     return (
-        <section className="h-[100svh] py-2 justify-between flex flex-col lg:text-lg">
+        <section className="h-[100svh] md:h-screen py-2 justify-between flex flex-col lg:text-lg">
             <div className="w-full flex justify-between">
                 <div className="base-1/2 landscape:base-1/3">02.—26. November</div>
                 <div className="portrait:hidden base-1/3">
@@ -9,9 +9,9 @@ const LandingComponent = () => {
                 <div className="base-1/2 landscape:base-1/3 text-right">immer 14:00–22:00</div>
             </div>
             <div className="w-full md:flex relative flex flex-col justify-between items-center flex-1">
-                <img className="w-full absolute -z-10 max-h-[80%] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 landscape:hidden" src="./images/graphics/landingpage-1080x1920-02.svg" />
+                <img className="w-full absolute -z-10 max-h-[110%] left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 landscape:hidden" src="./images/graphics/landingpage-1080x1920-02.svg" />
                 <img className="w-full absolute -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 portrait:hidden" src="./images/graphics/landingpage-1920x1080-01.svg" />
-                <div className="w-full h-[16%] mt-6 flex justify-center landscape:hidden ">
+                <div className="w-full h-[20%] mt-2 flex justify-center landscape:hidden ">
                     <img className="" src="./images/graphics/logo-vermicelleria-schwarz.svg" />
                 </div>
                 <div className="h-[20%] max-w-[40vh] w-full mb-4 flex justify-around content-center landscape:hidden">
