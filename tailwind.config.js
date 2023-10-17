@@ -1,31 +1,52 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-        fontSize: {
-            'sm': '1rem',
-            'lg': '1.5rem',
-            'xl': '1.875rem',
-        },
-        fontFamily: {
-            special: ['var(--font-special)', 'sans-serif'],
-            regular: ['var(--font-regular)', 'sans-serif']
-        },
-        screens: {
-            'xs': '414px',
-        },
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './components/**/*.{js,ts,jsx,tsx,mdx}',
+      './app/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
+    theme: {
+      extend: {
+          fontSize: {
+              'sm': '1rem',
+              'lg': '1.5rem',
+              'xl': '1.875rem',
+              '2xl': '2.3125rem',
+              '3xl': '3.5rem',
+          },
+          fontFamily: {
+              special: ['var(--font-special)', 'sans-serif'],
+              regular: ['var(--font-regular)', 'sans-serif']
+          },
+          screens: {
+              'xs': '414px',
+          },
+      },
     },
-  },
-  corePlugins: {
-    aspectRatio: false,
-  },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-    // ...
-  ],
-}
+    safelist: [
+      'basis-[50%]',
+      'basis-[100%]',
+      'text-xl',
+      'h-[60%]',
+      'h-[70%]',
+      'h-[80%]',
+      'h-[90%]',
+      'h-[100%]',
+      'mb-8',
+      'mb-2',
+      'md:mb-20',
+      'md:mb-4',
+      'col-span-12',
+      'col-span-6',
+      'md:col-span-6',
+      'md:col-span-12',
+    ],
+    corePlugins: {
+      aspectRatio: false,
+    },
+    plugins: [
+      require('@tailwindcss/aspect-ratio'),
+      // ...
+    ],
+  }
+  
