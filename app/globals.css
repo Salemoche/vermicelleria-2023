@@ -3,15 +3,37 @@
 @tailwind utilities;
 
 @layer base {
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     html {
-       font-size: 20px;
+        font-size: 20px;
+    }
+
+    body {
+        @apply md:text-2xl;
     }
 
     a {
         @apply underline;
     }
 
-    main {
-        @apply px-2;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply mb-2 text-xl last:mb-0 md:mb-4 font-special md:text-3xl;
+    }
+
+    p {
+        @apply mb-2 last:mb-0 md:mb-4;
+    }
+
+    img {
+        @apply object-center;
     }
 }
