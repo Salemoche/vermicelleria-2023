@@ -41,25 +41,25 @@ const BannerComponent = ({ globalSet: { email, date, time} }) => {
 const BannerInner = ({ date, time }) => {
     return(
         <div className="inline-flex w-screen 2xl:w-[1800px] gap-4 h-full justify-between align-center mr-2 last:mr-0 md:mr-4 px-2 md:px-4">
-            <div className={`h-full flex items-center justify-center order-10`}>
+            <div className={`h-full items-center justify-center  hidden md:flex`}>
                 <img className={`h-[50%]`} src={`/images/schlange-outline.svg`} alt="" />
             </div>
-            <div className={`h-full items-center items-center justify-center hidden lg:flex order-10`}>
+            <div className={`h-full items-center items-center justify-center hidden lg:flex `}>
                 <div>{date}</div>
             </div>
-            <div className={`h-full flex items-center justify-center order-10`}>
+            <div className={`h-full flex items-center justify-center order-3 md:order-none basis-[30%] md:basis-auto`}>
                 <img className={`h-[100%]`} src={`/images/fuenf-jahres-stern.svg`} alt="" />
             </div>
-            <div className={`h-full flex items-center justify-center order-10`}>
+            <div className={`h-full flex items-center justify-center order-2 md:order-none basis-[40%] md:basis-auto`}>
                 <img className={`h-[80%]`} src={`/images/logo-vermicelleria-schwarz.svg`} alt="" />
             </div>
-            <div className={`h-full flex items-center justify-center order-10`}>
+            <div className={`h-full flex items-center justify-center order-1 md:order-none basis-[30%] md:basis-auto`}>
                 <img className={`h-[80%]`} src={`/images/jubilaeums-banner.svg`} alt="" />
             </div>
-            <div className={`h-full items-center items-center justify-center hidden lg:flex order-10`}>
+            <div className={`h-full items-center items-center justify-center hidden lg:flex `}>
                 <div>{time}</div>
             </div>
-            <div className={`h-full flex items-center justify-center order-10`}>
+            <div className={`h-full flex items-center justify-center  hidden md:flex`}>
                 <img className={`h-[60%]`} src={`/images/2er-wolke-outline.svg`} alt="" />
             </div>
         </div>

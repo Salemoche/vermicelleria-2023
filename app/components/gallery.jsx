@@ -1,38 +1,24 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 const GalleryComponent = ({gallery}) => {
 
     const swiperRef = useRef(null)
+    const [currentSlide, setCurrentSlide] = useState(0)
 
     return (
-        <div className="col-span-12 relative">
-            {/* { gallery.map( ( galleryItem, i ) => {
-                return(
-                    <div key={`gallery-item-${i}`} className={`w-full aspect-w-3 aspect-h-2 absolute first:relative first:z-10 top-0 ${ galleryItem.hideOnScreens.includes('mobile') ? 'hidden' : 'inline-block' } ${ galleryItem.hideOnScreens.includes('desktop') ? 'md:hidden' : 'md:inline-block' }`}>
-                        <img className="w-full object-cover" src={galleryItem.galleryImage[0].url} alt="" />
-                    </div>
-                )
-            })}
-            <div className={`w-full flex gap-4`}>
-                { gallery.map( ( galleryItem, i ) => {
-                    return(
-                        <div key={`gallery-tab-${i}`} className={`${ galleryItem.hideOnScreens.includes('mobile') ? 'hidden' : 'inline-block' } ${ galleryItem.hideOnScreens.includes('desktop') ? 'md:hidden' : 'md:inline-block' }`}>
-                            { galleryItem.tabName }
-                        </div>
-                    )
-                })}
-            </div> */}
+        <div className="col-span-12 relative mb-8 md:mb-20">
             
             <Swiper
                 className="w-full"
                 spaceBetween={0}
                 slidesPerView={1}
                 effect={'fade'}
+                onSlideChange={(swiper) => {setCurrentSlide(swiper.activeIndex)}}
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
                 }}
@@ -45,12 +31,12 @@ const GalleryComponent = ({gallery}) => {
                     </SwiperSlide>
                 )
             })}
-            <div className={`w-full flex gap-4`}>
+            <div className={`w-full flex gap-4 mt-2 md:mt-4`}>
                 { gallery.map( ( galleryItem, i ) => {
                     return(
                         <div 
                             key={`gallery-tab-${i}`} 
-                            className={`${ galleryItem.hideOnScreens.includes('mobile') ? 'hidden' : 'inline-block' } ${ galleryItem.hideOnScreens.includes('desktop') ? 'md:hidden' : 'md:inline-block' }`}
+                            className={`${ currentSlide === i && 'opacity-50' } ${ galleryItem.hideOnScreens.includes('mobile') ? 'hidden' : 'inline-block' } ${ galleryItem.hideOnScreens.includes('desktop') ? 'md:hidden' : 'md:inline-block' } cursor-pointer hover:opacity-50 transition-opacity duration-[0.3]`}
                             onClick={() => swiperRef.current.slideTo(i)}
                         >
                             { galleryItem.tabName }

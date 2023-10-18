@@ -48,7 +48,7 @@ export default async function Home() {
 
 	return (
 		<main className="min-h-[100svh]">
-            <div className="h-[100svh] w-full pb-20">
+            <div className="h-[100svh] w-full pb-[7rem] md:pb-20">
                 <img className="w-full h-full portrait:hidden object-cover" src={landingImage[0].url} alt="" />
                 <img className="w-full h-full landscape:hidden object-cover object-bottom" src={landingImageMobile[0].url} alt="" />
             </div>
