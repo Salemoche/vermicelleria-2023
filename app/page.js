@@ -44,7 +44,7 @@ export default async function Home() {
         return item;
     }
 
-    console.log(mainContent)
+    // console.log(mainContent)
 
 	return (
 		<main className="min-h-[100svh]">
@@ -59,7 +59,7 @@ export default async function Home() {
                         { section.sectionItems.map(( sectionItem, j ) => {
                             return( getSectionItem( sectionItem, j ))
                         })}
-                        { section.gallery && <GalleryComponent gallery={section.gallery } /> }
+                        { section.gallery.length > 1 && <GalleryComponent gallery={section.gallery } /> }
                     </section>
                 ))}
             </div>
