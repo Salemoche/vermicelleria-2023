@@ -19,6 +19,18 @@ export const CONTENT_QUERY = gql `
                 tabName
                 galleryImage {
                   url
+                  alt
+                  width
+                  height
+                  small_url: url(transform: "small")
+                  small_width: width(transform: "small")
+                  small_height: height(transform: "small")
+                  medium_url: url(transform: "medium")
+                  medium_width: width(transform: "medium")
+                  medium_height: height(transform: "medium")
+                  large_url: url(transform: "large")
+                  large_width: width(transform: "large")
+                  large_height: height(transform: "large")
                 }
                 hideOnScreens
               }
@@ -27,6 +39,18 @@ export const CONTENT_QUERY = gql `
               ... on sectionItems_imageBlock_BlockType {
                 image {
                   url
+                  alt
+                  width
+                  height
+                  small_url: url(transform: "small")
+                  small_width: width(transform: "small")
+                  small_height: height(transform: "small")
+                  medium_url: url(transform: "medium")
+                  medium_width: width(transform: "medium")
+                  medium_height: height(transform: "medium")
+                  large_url: url(transform: "large")
+                  large_width: width(transform: "large")
+                  large_height: height(transform: "large")
                 }
                 aspectRatio
                 width
