@@ -9,7 +9,7 @@ const ImageItemComponent = ({sectionItem: {image, mask, aspectRatio, width, extr
     console.log(image[0])
 
     return (
-        <div className={`col-span-${ aspectRatio === 'twoThree' && width == 6 ? 6 : 12} md:col-span-${width} ${aspectRatioClass} mb-${ extraSpace ? '8' : '2' } md:mb-${ extraSpace ? '20' : '4' } ${ hideOnScreens.includes('mobile') ? 'hidden' : 'inline-block' } ${ hideOnScreens.includes('desktop') ? 'md:hidden' : 'md:inline-block' }`}>
+        <div className={`col-span-${ aspectRatio === 'twoThree' && width == 6 ? 6 : 12} lg:col-span-${width} ${aspectRatioClass} mb-${ extraSpace ? '8' : '2' } lg:mb-${ extraSpace ? '20' : '4' } ${ hideOnScreens.includes('mobile') ? 'hidden' : 'inline-block' } ${ hideOnScreens.includes('desktop') ? 'lg:hidden' : 'lg:inline-block' }`}>
             { image[0] && <img 
                 className="object-cover w-full" 
                 src={`${image[0].url}`} 

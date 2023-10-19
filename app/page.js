@@ -48,12 +48,12 @@ export default async function Home() {
 
 	return (
 		<main className="min-h-[100svh]">
-            <div className="h-[100svh] w-full pb-[7rem] md:pb-20">
+            <div className="h-[100svh] w-full pb-[7rem] lg:pb-20">
                 <img className="w-full h-full portrait:hidden object-cover" src={landingImage[0].url} alt="" />
                 <img className="w-full h-full landscape:hidden object-cover object-bottom" src={landingImageMobile[0].url} alt="" />
             </div>
             <BannerComponent globalSet={data.globalSet} />
-            <div className="px-2 md:px-4">
+            <div className="px-2 lg:px-4">
                 { mainContent.map(( section, i) => (
                     <section id={section.sectionId} key={`content-section-${i}`} className={`w-full grid grid-cols-12 gap-x-4`}>
                         { section.sectionItems.map(( sectionItem, j ) => {
@@ -63,9 +63,9 @@ export default async function Home() {
                     </section>
                 ))}
             </div>
-            <footer className="w-full grid grid-cols-12 gap-4 px-2 md:px-4 pb-2 md:pb-4">
-                <div className="col-span-12 md:col-span-6" dangerouslySetInnerHTML={{ __html: footerLeft }}></div>
-                <div className="col-span-12 md:col-span-6" dangerouslySetInnerHTML={{ __html: footerRight }}></div>
+            <footer className="w-full grid grid-cols-12 gap-4 px-2 lg:px-4 pb-2 lg:pb-4">
+                <div className="col-span-12 lg:col-span-6" dangerouslySetInnerHTML={{ __html: footerLeft }}></div>
+                <div className="col-span-12 lg:col-span-6" dangerouslySetInnerHTML={{ __html: footerRight }}></div>
             </footer>
 		</main>
 	)

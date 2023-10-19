@@ -33,7 +33,7 @@ const polisans = localFont({
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${obibok.variable} ${polisans.variable} font-regular max-w-screen overflow-y-auto overflow-x-hidden md:mb-20 mb-[130px]`}>{children}</body>
+			<body className={`${obibok.variable} ${polisans.variable} font-regular max-w-screen overflow-y-auto overflow-x-hidden lg:mb-20 mb-[130px]`}>{children}</body>
 		</html>
 	)
 }

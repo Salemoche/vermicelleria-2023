@@ -18,7 +18,7 @@
     }
 
     body {
-        @apply md:text-2xl;
+        @apply lg:text-2xl;
     }
 
     a {
@@ -31,11 +31,11 @@
     h4,
     h5,
     h6 {
-        @apply mb-2 text-xl last:mb-0 md:mb-4 font-special md:text-3xl;
+        @apply mb-2 text-xl last:mb-0 lg:mb-4 font-special lg:text-3xl;
     }
 
     p {
-        @apply mb-2 last:mb-0 md:mb-4;
+        @apply mb-2 last:mb-0 lg:mb-4;
     }
 
     img {
