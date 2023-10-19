@@ -31,6 +31,9 @@ export const CONTENT_QUERY = gql `
                   large_url: url(transform: "large")
                   large_width: width(transform: "large")
                   large_height: height(transform: "large")
+                  extraLarge_url: url(transform: "extraLarge")
+                  extraLarge_width: width(transform: "extraLarge")
+                  extraLarge_height: height(transform: "extraLarge")
                 }
                 hideOnScreens
               }
@@ -51,6 +54,9 @@ export const CONTENT_QUERY = gql `
                   large_url: url(transform: "large")
                   large_width: width(transform: "large")
                   large_height: height(transform: "large")
+                  extraLarge_url: url(transform: "extraLarge")
+                  extraLarge_width: width(transform: "extraLarge")
+                  extraLarge_height: height(transform: "extraLarge")
                 }
                 aspectRatio
                 width
