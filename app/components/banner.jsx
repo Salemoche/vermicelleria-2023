@@ -47,15 +47,15 @@ const BannerInner = ({ date, time }) => {
             <div className={`h-full items-center items-center justify-center hidden lg:flex `}>
                 <div>{date}</div>
             </div>
-            <div className={`h-full flex items-center justify-center order-3 lg:order-none basis-[30%] lg:basis-auto`}>
-                {/* <img className={`h-[100%]`} src={`/images/fuenf-jahres-stern.svg`} alt="" /> */}
-            </div>
+            {/* <div className={`h-full flex items-center justify-center order-3 lg:order-none basis-[30%] lg:basis-auto`}>
+                <img className={`h-[100%]`} src={`/images/fuenf-jahres-stern.svg`} alt="" />
+            </div> */}
             <div className={`h-full flex items-center justify-center order-2 lg:order-none basis-[40%] lg:basis-auto`}>
                 <img className={`h-[80%]`} src={`/images/logo-vermicelleria-schwarz.svg`} alt="" />
             </div>
-            <div className={`h-full flex items-center justify-center order-1 lg:order-none basis-[30%] lg:basis-auto`}>
-                {/* <img className={`h-[80%]`} src={`/images/jubilaeums-banner.svg`} alt="" /> */}
-            </div>
+            {/* <div className={`h-full flex items-center justify-center order-1 lg:order-none basis-[30%] lg:basis-auto`}>
+                <img className={`h-[80%]`} src={`/images/jubilaeums-banner.svg`} alt="" />
+            </div> */}
             <div className={`h-full items-center items-center justify-center hidden lg:flex `}>
                 <div>{time}</div>
             </div>
