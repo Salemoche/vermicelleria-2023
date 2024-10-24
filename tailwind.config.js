@@ -40,7 +40,7 @@ module.exports = {
       'col-span-6',
       'lg:col-span-6',
       'lg:col-span-12',
-      'only:lg:col-start-4',
+      'only:col-start-4',
     ],
     corePlugins: {
       aspectRatio: false,
