@@ -49,7 +49,7 @@ function FAQPage({ data }) {
                             aria-expanded={openIndex === idx}
                         >
                             <h2 className="font-regular text-sm lg:text-xl m-0">{item.question}</h2>
-                            <div className="relative lg:w-[30px] lg:h-[30px] w-[15px] h-[15px]">
+                            <div className="relative lg:w-[1.875rem] lg:h-[1.875rem] w-[1rem] h-[1rem]">
                                 <div className={`w-full absolute top-1/2 border-black border-b-[1px] -translate-y-1/2 transition-transform duration-300 ${openIndex === idx ? "rotate-180" : ""}`}></div>
                                 <div className={`h-full absolute left-1/2 border-black border-l-[1px] -translate-x-1/2 transition-transform duration-300 ${openIndex === idx ? "rotate-90" : ""}`}></div>
                             </div>

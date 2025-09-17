@@ -40,44 +40,39 @@ const BannerComponent = ({ globalSet: { email, date, time} }) => {
 
 const BannerInner = ({ date, time }) => {
     return(
-        <div className="inline-flex w-screen gap-4 h-full justify-between align-center mr-2 last:mr-0 lg:mr-4 px-2 lg:px-4">
-            <div className={`h-full items-center items-center justify-center hidden lg:flex `}>
+        <div className="h-full inline-block">
+        <div className="grid w-screen gap-4 lg:grid-cols-[4fr_1fr_1fr_1fr_2.5fr_1fr_1fr_1fr_4fr] grid-cols-3 h-full justify-between align-center mr-2 last:mr-0 lg:mr-4 px-2 lg:px-4">
+            <div className={`width-[2fr] h-full items-center justify-center hidden lg:flex whitespace-normal`}>
                 <div>{date}</div>
             </div>
-            <div className="flex justify-center lg:justify-between flex-grow-[1] gap-4">
-                <div className={`h-full items-center justify-center  hidden lg:flex`}>
-                    <img className={`h-[50%]`} src={`/images/vermi-banner-wurm-desktop-outline.svg`} alt="" />
-                </div>
-                <div className={`h-full items-center justify-center  lg:hidden flex`}>
-                    <img className={`h-[50%]`} src={`/images/vermi-banner-wurm-mobile-outline.svg`} alt="" />
-                </div>
-                <div className={`h-full items-center justify-center  hidden lg:flex`}>
-                    <img className={`h-[50%]`} src={`/images/vermi-banner-meringues-outline.svg`} alt="" />
-                </div>
-                <div className={`h-full items-center justify-center  hidden lg:flex`}>
-                    <img className={`h-[50%] translate-y-[5%]`} src={`/images/vermicelleria-banner-halbkreis-outline.svg`} alt="" />
-                </div>
+            <div className={`lg:h-full h-[100px] items-center justify-center  hidden lg:flex`}>
+                <img className={`h-[50%]`} src={`/images/vermi-banner-wurm-desktop-outline.svg`} alt="" />
             </div>
-            <div className={`h-full flex mx-4 items-center justify-center basis-[40%] lg:basis-auto`}>
+            <div className={`lg:h-full h-[100px] items-center justify-center  lg:hidden flex`}>
+                <img className={`h-[50%]`} src={`/images/vermi-banner-wurm-mobile-outline.svg`} alt="" />
+            </div>
+            <div className={`lg:h-full h-[100px] items-center justify-center  hidden lg:flex`}>
+                <img className={`h-[50%]`} src={`/images/vermi-banner-meringues-outline.svg`} alt="" />
+            </div>
+            <div className={`lg:h-full h-[100px] items-center justify-center  hidden lg:flex`}>
+                <img className={`h-[50%] translate-y-[5%]`} src={`/images/vermicelleria-banner-halbkreis-outline.svg`} alt="" />
+            </div>
+            <div className={`lg:h-full h-[100px] flex lg:mx-4 items-center justify-center basis-[40%] lg:basis-auto`}>
                 <img className={`h-[80%]`} src={`/images/logo-vermicelleria-schwarz.svg`} alt="" />
             </div>
-            <div className="flex justify-center lg:justify-between flex-grow-[1] gap-4">
-                <div className={`h-full items-center justify-center flex`}>
-                    <img className={`h-[50%]`} src={`/images/vermi-banner-meringues-outline.svg`} alt="" />
-                </div>
-                <div className={`h-full items-center justify-center  hidden lg:flex`}>
-                    <img className={`h-[50%]`} src={`/images/vermi-banner-wurm-desktop-outline.svg`} alt="" />
-                </div>
-                <div className={`h-full items-center justify-center  hidden lg:flex`}>
-                    <img className={`h-[50%] translate-y-[5%]`} src={`/images/vermicelleria-banner-halbkreis-outline.svg`} alt="" />
-                </div>
-                <div className={`h-full items-center justify-center  hidden lg:flex`}>
-                    <img className={`h-[50%]`} src={`/images/vermi-banner-wurm-mobile-outline.svg`} alt="" />
-                </div>
+            <div className={`lg:h-full h-[100px] items-center justify-center flex`}>
+                <img className={`h-[50%]`} src={`/images/vermi-banner-meringues-outline.svg`} alt="" />
             </div>
-            <div className={`h-full items-center items-center justify-center hidden lg:flex `}>
+            <div className={`lg:h-full h-[100px] items-center justify-center  hidden lg:flex`}>
+                <img className={`h-[50%]`} src={`/images/vermi-banner-wurm-desktop-outline.svg`} alt="" />
+            </div>
+            <div className={`lg:h-full h-[100px] items-center justify-center  hidden lg:flex`}>
+                <img className={`h-[50%] translate-y-[5%]`} src={`/images/vermicelleria-banner-halbkreis-outline.svg`} alt="" />
+            </div>
+            <div className={`lg:h-full h-[100px] items-center text-right justify-center hidden lg:flex whitespace-normal`}>
                 <div>{time}</div>
             </div>
+        </div>  
         </div>
     )
 }
