@@ -84,3 +84,31 @@ export const CONTENT_QUERY = gql `
   }
   
 `
+
+export const FAQ_QUERY = gql `
+    query MyQuery {
+    entry(title: "faq") {
+        ... on faq_faq_Entry {
+            title
+            footerLeft
+            footerRight
+            itemImage {
+                url
+            }
+            faqItems {
+                ... on faqItems_item_BlockType {
+                    question
+                    answer
+                } 
+            }
+            }
+    },
+    globalSet {
+      ... on settings_GlobalSet {
+        email
+        date
+        time
+      }
+    }
+}
+`
