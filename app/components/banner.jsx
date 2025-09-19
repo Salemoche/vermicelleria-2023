@@ -41,7 +41,7 @@ const BannerComponent = ({ globalSet: { email, date, time} }) => {
 const BannerInner = ({ date, time }) => {
     return(
         <div className="h-full inline-block">
-        <div className="grid w-screen gap-4 lg:grid-cols-[4fr_1fr_1fr_1fr_2.5fr_1fr_1fr_1fr_4fr] grid-cols-3 h-full justify-between align-center mr-2 last:mr-0 lg:mr-4 px-2 lg:px-4">
+        <div className="grid w-screen gap-4 lg:grid-cols-[4fr_1fr_1fr_1fr_2.5fr_1fr_1fr_1fr_4fr] grid-cols-3 h-full justify-between align-center lg:mr-4 px-2 lg:px-4">
             <div className={`width-[2fr] h-full items-center justify-center hidden lg:flex whitespace-normal`}>
                 <div>{date}</div>
             </div>

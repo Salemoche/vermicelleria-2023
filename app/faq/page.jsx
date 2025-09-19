@@ -36,7 +36,7 @@ function FAQPage({ data }) {
     return (
         <main className="min-h-[100svh]">
             <BannerComponent globalSet={data.globalSet} />
-            <div className="lg:fixed relative left-2 lg:left-4 top-2 lg:top-4 mb-8"><a href="/">Zurück</a></div>
+            <div className="lg:fixed relative pl-2 lg:pl-4 top-2 lg:top-4 mb-8"><a href="/">Zurück</a></div>
             <div className="w-full flex flex-col content-center lg:px-36 px-2 lg:py-4 py-2 max-w-[1800px] mx-auto">
                 <h1 className="font-regular text-sm lg:text-xl border-black border-b-[1px] pb-2 lg:pb-4 m-0">{title}</h1>
                 <ul className="">
